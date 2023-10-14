@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  box-sizing: border-box;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.stroke{
+ 
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: #000;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+.no-stroke{
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: #000;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: #000;
+}
