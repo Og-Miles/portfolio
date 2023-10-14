@@ -3,16 +3,16 @@ const Navbar = () => {
     <div className='flex justify-between items-center'>
       {/* Logo */}
       <div className='justify-start'>
-        <h1 className='text-7xl font-extrabold'>
+        <h1 className='text-4xl lg:text-7xl font-extrabold'>
           E.<span className='stroke'>O</span>
         </h1>
       </div>
 
       {/* NavLinks */}
-      <div className='flex flex-end'>
+      <div className='hidden lg:flex flex-end '>
         <ul className='flex items-center '>
           <li className='px-[32px] text-lg cursor-pointer hover:pb-2 ease-in-out'>
-            Blog
+            <a href='https://moore-blog.vercel.app'>Blog</a>
           </li>
           <li className='px-[32px] text-lg cursor-pointer hover:pb-2 ease-in-out'>
             About Me
@@ -25,6 +25,11 @@ const Navbar = () => {
           </button>
         </ul>
       </div>
+
+      {/* NavLinks Mobile */}
+      <div className='flex lg:hidden rounded-full outline bg-white min-w-[100px] py-2'></div>
+
+      <div className='flex flex-end lg:hidden'>menu</div>
     </div>
   );
 };
